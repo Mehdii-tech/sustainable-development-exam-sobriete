@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <title>Sobriété Numérique</title>
+</head>
+<style>
+
+body {
+            background-image: url('https://images.pexels.com/photos/1287155/pexels-photo-1287155.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            @media (min-width: 840px)  {
+                height: 82vw;
+            }
+            
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @font-face {
+  font-family: "TNY";
+  src: url("./SupersetRegular.ttf") format("truetype");
+  font-style: normal;
+}
+
+
+.n2 {
+  font-family: "TNY";
+  font-style: normal;
+}
+
+@media (max-width: 840px) {
+  .title {
+    display: flex;
+    align-items: center;
+    top:0;
+    justify-content: center;
+    color:white;
+
+  }
+
+}
+
+@media (max-width: 840px) {
+  .mouser {
+    display: hidden;
+  }
+
+}
+
+/* Mousescroll */
+.scroll-downs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  width: 34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 4px 9px;
+  height: 34px;
+  border: 2px solid;
+  border-radius: 25px;
+  opacity: 0.5;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(12px);
+    
+  }
+}
+
+
+</style>
+<body class="bg-gray-100 p-6">
+
+    <div class="  font-medium sm:text-2xl text-lg md:mx-12 flex items-center space-x-2  md:space-x-9 justify-center md:absolute font-bold text-green-800 ">
+        <div class="title text-center lg:space-y-5    ">
+            <h1>E</h1>
+            <h1>X</h1>
+            <h1>I</h1>
+            <h1>G</h1>
+            <h1>E</h1>
+            <h1>N</h1>
+            <h1>C</h1>
+            <h1>E</h1>
+            <h1>S</h1>
+        </div>
+        <div class="title text-center lg:space-y-5  ">
+            <h1>T</h1>
+            <h1>E</h1>
+            <h1>C</h1>
+            <h1>H</h1>
+            <h1>N</h1>
+            <h1>I</h1>
+            <h1>Q</h1>
+            <h1>U</h1>
+            <h1>E</h1>
+        </div>
+        <div class="title flex text-center  ">
+            <h1>D</h1>
+            <h1>E</h1>
+            <h1>V</h1>
+       
+        </div>
+        <div class="title flex text-center ">
+            <h1>D</h1>
+            <h1>U</h1>
+            <h1>R</h1>
+            <h1>A</h1>
+            <h1>B</h1>
+            <h1>L</h1>
+            <h1>E</h1>
+        </div>
+
+    
+    </div> 
+    <div class="mouser absolute m-32 right-12">
+        <span class=" font-bold text-green-800 text-xl pr-2 ">Scroll</span><div class="scroll-downs  ">
+            <div class="mousey border-white  mt-16  ">
+              <div class="scroller  bg-black"></div>
+            </div>
+
+          </div>
+    </div>
+    <div class=" fade-in overflow-y-auto h-screen   ">
+        
+    <div class="max-w-2xl mx-auto p-8  bg-white rounded-lg shadow my-8">
+          <div class=" flex  justify-center items-center space-x-2  mb-2 mx-8 ">
+            <a href="https://portefolio-theta.vercel.app/" class=" cursor-pointer mt-4 font-medium n2 sm:text-5xl text-green-800 text-4xl ">JABBOUR</a>
+            <p>X</p>
+            <img src="https://www.efrei.fr/wp-content/uploads/2022/01/LOGO_EFREI-PRINT_EFREI-WEB.png" alt="Logo EFREI" class="h-10">
+          </div>
+          <h2 class="text-2xl mb-4">Sobriété numérique</h2>  
+   
+        <div><h2 class="text-xl text-transparent mb-6 font-bold bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ">Question 1</h2></div>
+    
+   
+        <div class="mb-4">
+          <h3 class="text-lg font-semibold mb-2">User Story 1:</h3>
+          <p>En tant qu'administrateur système, je souhaite pouvoir ajuster finement les paramètres de la solution SaaS pour optimiser l'utilisation des ressources serveur, garantissant ainsi une consommation énergétique minimale.</p>
+        </div>
+    
+     
+        <div class="mb-4">
+          <h3 class="text-lg font-semibold mb-2">User Story 2:</h3>
+          <p>En tant qu'utilisateur final, je m'attends à une expérience fluide avec la solution SaaS, même dans des conditions de connectivité limitée, assurant ainsi une utilisation efficace et sans heurts.</p>
+        </div>
+    
+   
+        <div class="mb-4">
+          <h3 class="text-lg font-semibold mb-2">User Story 3:</h3>
+          <p>En tant qu'éditeur, je veux disposer d'outils de surveillance et de reporting intégrés dans la solution SaaS pour évaluer en temps réel l'efficacité énergétique et la sobriété numérique, facilitant ainsi la prise de décisions informées.</p>
+        </div>
+   
+        <div class="mb-4">
+          <h3 class="text-lg font-semibold mb-2">User Story 4:</h3>
+          <p>En tant que responsable de projet, je recherche une solution SaaS qui respecte les normes de sécurité les plus strictes, assurant la protection des données de l'entreprise tout en garantissant une performance optimale et une conformité réglementaire.</p>
+        </div>
+    </div>
+    <div class="max-w-2xl mx-auto bg-white p-8 rounded shadow my-8">
+        <div><h2 class="text-xl text-transparent mb-6 font-bold bg-clip-text bg-gradient-to-r from-green-400 to-blue-600 ">Question 2</h2></div>
+        <div class="mb-4">
+            <p class="mb-2">
+            Dans le cadre de mon alternance en tant que développeur web fullstack, je m'appuierai sur les principes du développement durable que j'active activement dans mon parcours. Les pratiques de programmation efficientes, que j'ai intégrées pendant ce cours, seront essentielles pour optimiser les performances des applications que je développerai.</p>
+  
+            <p class="mb-2">Mon choix de fournisseurs d'hébergement sera influencé par mes convictions en faveur du dd, en privilégiant des solutions responsables utilisant des sources d'énergie renouvelable. La conception écologique de mes sites web, avec un focus sur la légèreté des pages et la réduction de l'empreinte carbone, sera une composante clé de mes projets.</p>
+  
+            <p class="mb-2">De plus, je partagerai et renforcerai la sensibilisation aux enjeux environnementaux au sein de mon équipe, en mettant en avant l'utilisation d'outils de développement intégrant des fonctionnalités éco-responsables. Mon ambition consiste à apporter une contribution significative à un secteur numérique plus durable, aligné sur les préoccupations environnementales.</p>
+        </div>
+    </div>
+       
+    <div class="max-w-2xl mx-auto bg-white p-8 rounded shadow my-8">
+        <div><h2 class="text-xl text-transparent mb-6 font-bold bg-clip-text bg-gradient-to-r from-yellow-400 to-red-600 ">Question 3</h2></div>
+        <div class="mb-4">
+            <h2 class="text-lg font-semibold mb-2">Actions Mises en Œuvre par l'organisation qui m'a accuilli, KNCO:</h2>
+            <p class="mb-2">1. <strong>Conformité aux Normes :</strong> Respecte les normes liées aux dispositifs médicaux. Cette conformité témoigne de la qualité et de la sécurité des produits, ce qui est crucial dans l'industrie de la lunetterie.</p>
+            <p class="mb-2">2. <strong>Distribution Réglementée :</strong> L'activité de distribution aux particuliers est réglementée et se concentre exclusivement sur les professionnels de l'optique. Cela indique une approche spécialisée, renforçant la relation avec des partenaires tels que les opticiens, optométristes et ophtalmologistes.</p>
+          </div>
+      
+       
+          <div class="mb-4">
+            <h2 class="text-lg font-semibold mb-2">Axes d'Amélioration :</h2>
+            <p class="mb-2">1. <strong>Intégration de Principes Écologiques :</strong> Possibilité d'explorer des opportunités pour intégrer des principes de sobriété numérique dans ses processus, en optimisant par exemple l'utilisation des ressources numériques tout au long de la chaîne de production et de distribution.</p>
+            <p class="mb-2">2. <strong>Suivi de l'Impact Environnemental :</strong> Pour renforcer sa maturité en matière de sobriété numérique KNCO pourrait envisager de mettre en place des mesures permettant de quantifier et suivre son impact environnemental, y compris dans les processus numériques associés à la création et à la distribution.</p>
+            <p class="mb-2">3. <strong>Formation et Sensibilisation :</strong> KNCO pourrait envisager des initiatives de formation et de sensibilisation au sein de l'entreprise pour informer les équipes sur les enjeux de la sobriété numérique et encourager des pratiques plus responsables.</p>
+            <p class="mb-2">4. <strong>Exploration de Technologies Durables :</strong> En tant qu'entreprise engagée, KNCO pourrait explorer l'adoption de technologies plus durables dans ses opérations numériques, contribuant ainsi à un impact environnemental moindre.</p>
+          </div>
+    </div>
+    <div class="max-w-2xl mx-auto bg-white p-8 rounded shadow my-8">
+
+        <div><h2 class="text-xl text-transparent mb-6 font-bold bg-clip-text bg-gradient-to-r from-red-400 to-gray-600 ">Question 4</h2></div>
+    
+        <p class="mb-4">En 2050, la sobriété numérique pourrait prendre une tournure dystopique. Dans ce scénario, malgré les efforts pour une technologie plus écoresponsable, les gens continuent de polluer sans limite. L'usage excessif de dispositifs numériques, comme l'hypothétique "Apple Vision Pro", dominerait la vie quotidienne. Ces appareils ultra-performants, bien que séduisants, contribueraient à une empreinte carbone massive due à leur production et utilisation intensives. Les interactions humaines seraient fortement médiatisées par la technologie, réduisant les contacts directs et augmentant la dépendance numérique. Dans cette vision, la technologie, au lieu d'être un outil au service de la durabilité, deviendrait un vecteur de consommation excessive et de détérioration environnementale.</p>
+    
+      </div>
+
+    </div>
+
+
+</div>
+</body>
+</html>
